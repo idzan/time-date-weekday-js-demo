@@ -6,7 +6,7 @@ function showTime() {
     let today = new Date(), hour = today.getHours(), minutes = today.getMinutes(), seconds = today.getSeconds(), 
     dates = today.getDate(), months = today.getMonth()+1, years = today.getFullYear();
 
-    const weekdays = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+    const weekdays = ["Sun","Mon","Tue","Wen","Thu","Fri","Sat"];
 
     time.innerHTML = `${hour}<span>:</span>${addZero(minutes)}<span>:</span>${addZero(seconds)}`;
     day.innerHTML = `${addZero(dates)}<span>.</span>${addZero(months)+1}<span>.</span>${years}<span> and it is </span>${weekdays[today.getDay()]}`;   
